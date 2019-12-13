@@ -1,0 +1,37 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel"> Detail Book</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+    (click)="activeModal.dismiss('cross clik')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="formId" class="col-form-label">id:</label>
+      <input type="text" class="form-control" name="id" [(ngModel)]="book.id" disabled id="formId">
+    </div>
+
+    <div class="form-group">
+        <label for="formTtitle" class="col-form-label">Title:</label>
+        <input type="text" class="form-control" name="Title" [(ngModel)]="book.title" disabled id="formTtitle">
+      </div>
+
+      <div class="form-group">
+          <label for="publisher" class="col-form-label">publisher:</label>
+          <input type="text" class="form-control" name="publisher" [(ngModel)]="book.publisher" disabled id="publisher">
+        </div>
+
+        <div class="form-group">
+            <label for="price" class="col-form-label">price:</label>
+            <input type="text" class="form-control" name="price" [(ngModel)]="book.price" disabled id="price">
+          </div>
+          <div class="form-group">
+              <label for="stock" class="col-form-label">stock:</label>
+              <input type="text" class="form-control" name="stock" [(ngModel)]="book.stock" disabled id="stock">
+            </div>
+
+  </form>
+</div>
+<div class="modal-footer">
+</div>

@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+          <th scope="col">NO</th>
+        <th scope="col">title</th>
+        <th scope="col">price</th>
+        <th scope="col">publisher</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of book">
+          <td>{{b.id}}</td>
+        <td>{{b.title}}</td>
+        <td>{{b.price}}</td>
+        <td>{{b.publisher}}</td>
+        <td>
+            <button type="button" (click)="openModal(b.id)" class="btn btn-dark">detail</button>
+            <button type="button"  (click)="openModalUpdate(b.id)"  class="btn btn-primary">update</button>
+            <button type="button" (click)="deleteBook(b.id)" class="btn btn-dark">delete</button>
+
+        </td>
+      </tr>
+    
+    </tbody>
+  </table>

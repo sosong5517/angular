@@ -1,0 +1,22 @@
+<h1>data Students</h1>
+<button type="button" class="btn btn-info">Info</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col"> name</th>
+            <th scope="col">nik</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of students">
+
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.nik}}</td>
+            <td><button type="button" class="btn btn-dark">edit</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
